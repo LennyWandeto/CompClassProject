@@ -1,9 +1,9 @@
-from settings import * 
-from sprites import * 
-from groups import AllSprites
+from .settings import * 
+from .sprites import * 
+from .groups import AllSprites
 import json
 
-class Game:
+class Pong:
     def __init__(self):
         pygame.init()
         self.display_surface = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
@@ -62,6 +62,6 @@ class Game:
             pygame.display.update()
         pygame.quit()
 
-if __name__ == '__main__':
-    game = Game()
-    game.run()
+# if __name__ == '__main__':
+#     game = Pong()
+#     game.run()

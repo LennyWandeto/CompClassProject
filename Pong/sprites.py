@@ -1,6 +1,7 @@
-from settings import * 
+from .settings import * 
 import random
 from random import uniform, choice
+
 
 def random_color():
     return f"#{random.randint(0, 255):02x}{random.randint(0, 255):02x}{random.randint(0, 255):02x}"
@@ -95,6 +96,7 @@ class Ball(pygame.sprite.Sprite):
                     new_color = random_color()
                     pygame.draw.circle(self.image, new_color, (SIZE['ball'][0] // 2, SIZE['ball'][1] // 2), SIZE['ball'][0] // 2)
                     pygame.draw.circle(self.shadow_surf, new_color, (SIZE['ball'][0] // 2, SIZE['ball'][1] // 2), SIZE['ball'][0] // 2)
+                    SPEED['ball'] += 10
                 else:
                     if self.rect.bottom >= sprite.rect.top and self.old_rect.bottom <= sprite.old_rect.top:
                         self.rect.bottom = sprite.rect.top
@@ -117,7 +119,6 @@ class Ball(pygame.sprite.Sprite):
             self.update_score('player' if self.rect.x < WINDOW_WIDTH / 2 else 'opponent')
             self.reset()
         
-        SPEED['ball'] += 0.001
         SPEED['player'] += 0.01
         SPEED['opponent'] += 0.01
     
