@@ -20,7 +20,7 @@ class Pong:
 
         # score 
         try:
-            with open(join('data', 'score.txt')) as score_file:
+            with open(join('../Pong','data', 'score.txt')) as score_file:
                 self.score = json.load(score_file)
         except:
             self.score = {'player': 0, 'opponent': 0}
@@ -49,7 +49,7 @@ class Pong:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     self.running = False
-                    with open(join('Pong', 'data', 'score.txt'), 'w') as score_file:
+                    with open(join('../Pong', 'data', 'score.txt'), 'w') as score_file:
                         json.dump(self.score, score_file)
             
             # update 
