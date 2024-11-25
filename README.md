@@ -42,8 +42,9 @@ Python
 
 ## Contact Details
 
-hgtoro5203@eagle.fgcu.edu
-vabolano5317@eagle.fgcu.edu.
+hgtoro5203@eagle.fgcu.edu \n
+vabolano5317@eagle.fgcu.edu \n
+lwwandero4529@eagle.fgcu.edu
 
 ### License
 The content of this site is licensed by MIT.
