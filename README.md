@@ -42,9 +42,11 @@ Python
 
 ## Contact Details
 
-hgtoro5203@eagle.fgcu.edu \n
-vabolano5317@eagle.fgcu.edu \n
-lwwandero4529@eagle.fgcu.edu
+Hector Toro : hgtoro5203@eagle.fgcu.edu
+
+Veronica Bolano: vabolano5317@eagle.fgcu.edu
+
+Lenny Wandeto : lwwandero4529@eagle.fgcu.edu
 
 ### License
 The content of this site is licensed by MIT.
