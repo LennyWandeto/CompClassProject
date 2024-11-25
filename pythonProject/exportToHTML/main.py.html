@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cf8e6d;}
+.s1 { color: #bcbec4;}
+.s2 { color: #bcbec4;}
+.s3 { color: #6aab73;}
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">from </span><span class="s1">Minigames</span><span class="s2">.</span><span class="s1">Pong</span><span class="s2">.</span><span class="s1">pong </span><span class="s0">import </span><span class="s1">Game</span>
+<span class="s0">from </span><span class="s1">Minigames</span><span class="s2">.</span><span class="s1">hangman</span><span class="s2">.</span><span class="s1">Hangman </span><span class="s0">import </span><span class="s1">hangman</span>
+<span class="s0">from </span><span class="s1">Minigames</span><span class="s2">.</span><span class="s1">BeeGame</span><span class="s2">.</span><span class="s1">code</span><span class="s2">.</span><span class="s1">platformmain </span><span class="s0">import </span><span class="s1">Platform</span>
+
+
+
+<span class="s0">def </span><span class="s1">main_menu</span><span class="s2">():</span>
+    <span class="s0">while True</span><span class="s2">:</span>
+        <span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Minigames&quot;</span><span class="s2">)</span>
+        <span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Enter 1 for Pong </span><span class="s0">\n</span><span class="s3">Enter 2 for Hangman </span><span class="s0">\n</span><span class="s3">Enter 3 for Platform Game </span><span class="s0">\n</span><span class="s3">Enter 'Quit' to exit minigames&quot;</span><span class="s2">)</span>
+        <span class="s1">choice </span><span class="s2">= </span><span class="s1">input</span><span class="s2">(</span><span class="s3">&quot;Choose here: &quot;</span><span class="s2">)</span>
+
+        <span class="s0">if </span><span class="s1">choice </span><span class="s2">== </span><span class="s3">&quot;1&quot;</span><span class="s2">:</span>
+            <span class="s1">game </span><span class="s2">= </span><span class="s1">Game</span><span class="s2">()</span>
+            <span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3">&quot;</span><span class="s2">)</span>
+            <span class="s1">game</span><span class="s2">.</span><span class="s1">run</span><span class="s2">()</span>
+            <span class="s1">main_menu</span><span class="s2">()</span>
+        <span class="s0">elif </span><span class="s1">choice </span><span class="s2">== </span><span class="s3">&quot;2&quot;</span><span class="s2">:</span>
+            <span class="s1">hangman</span><span class="s2">()</span>
+            <span class="s1">main_menu</span><span class="s2">()</span>
+        <span class="s0">elif </span><span class="s1">choice </span><span class="s2">== </span><span class="s3">&quot;3&quot;</span><span class="s2">:</span>
+            <span class="s1">game </span><span class="s2">= </span><span class="s1">Platform</span><span class="s2">()</span>
+            <span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;</span><span class="s0">\n</span><span class="s3">&quot;</span><span class="s2">)</span>
+            <span class="s1">game</span><span class="s2">.</span><span class="s1">run</span><span class="s2">()</span>
+            <span class="s1">main_menu</span><span class="s2">()</span>
+        <span class="s0">elif </span><span class="s1">choice</span><span class="s2">.</span><span class="s1">upper</span><span class="s2">() != </span><span class="s3">&quot;QUIT&quot;</span><span class="s2">:</span>
+            <span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Invalid input, please type a valid input for one of the minigames or type 'quit' if you want to exit&quot;</span><span class="s2">)</span>
+            <span class="s1">main_menu</span><span class="s2">()</span>
+        <span class="s0">elif </span><span class="s1">choice </span><span class="s2">== </span><span class="s3">&quot;QUIT&quot;</span><span class="s2">:</span>
+            <span class="s1">choice</span><span class="s2">=</span><span class="s1">choice</span><span class="s2">.</span><span class="s1">upper</span><span class="s2">()</span>
+            <span class="s1">print</span><span class="s2">(</span><span class="s3">&quot;Thanks for playing the minigames!&quot;</span><span class="s2">)</span>
+            <span class="s0">break</span>
+        <span class="s0">break</span>
+
+
+
+
+
+<span class="s0">if </span><span class="s1">__name__ </span><span class="s2">== </span><span class="s3">&quot;__main__&quot;</span><span class="s2">:</span>
+    <span class="s1">main_menu</span><span class="s2">()</span>
+</pre>
+</body>
+</html>
